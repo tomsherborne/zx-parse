@@ -107,7 +107,7 @@ bash ${PWD}/exec/sql/execute_sql.sh ${TOK_PRED_OUTPUT} ${DNT_PRED_OUTPUT}
 ### Citation
 If you use our code or new data split for ATIS then cite our paper (please cross-check the citation in the ACL Anthology):
 ```
-@inproceedings{sherborne-lapata-2022-zero-shot,
+@inproceedings{sherborne-lapata-2022-zero,
     title = "Zero-Shot Cross-lingual Semantic Parsing",
     author = "Sherborne, Tom  and
       Lapata, Mirella",
@@ -115,7 +115,10 @@ If you use our code or new data split for ATIS then cite our paper (please cross
     month = may,
     year = "2022",
     address = "Dublin, Ireland",
-    publisher = "Association for Computational Linguistics"
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.285",
+    pages = "4134--4153",
+    abstract = "Recent work in cross-lingual semantic parsing has successfully applied machine translation to localize parsers to new languages. However, these advances assume access to high-quality machine translation systems and word alignment tools. We remove these assumptions and study cross-lingual semantic parsing as a zero-shot problem, without parallel data (i.e., utterance-logical form pairs) for new languages. We propose a multi-task encoder-decoder model to transfer parsing knowledge to additional languages using only English-logical form paired data and in-domain natural language corpora in each new language. Our model encourages language-agnostic encodings by jointly optimizing for logical-form generation with auxiliary objectives designed for cross-lingual latent representation alignment. Our parser performs significantly above translation-based baselines and, in some cases, competes with the supervised upper-bound.",
 }
 ```
 If you use this split of Overnight with German and Chinese data then cite our previous paper:
